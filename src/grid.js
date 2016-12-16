@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 class Header extends React.Component {
 
   render() {
@@ -34,11 +37,10 @@ class Row extends React.Component {
   }
 }
 
-class Grid extends React.Component {
+export class Grid extends React.Component {
 
   constructor() {
-    super();
-    this.state = { x: 0 };    
+    super();  
   }
 
   render() {
@@ -60,9 +62,6 @@ class Grid extends React.Component {
       </table>
     );
   }
-
-  changed()
-  {
-    alert(this.state.x);
-  }
 }
+
+export default Grid;

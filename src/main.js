@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Grid from 'Grid';
+
 const marketdata = [
         { 
             stock : "PETR4", 
@@ -17,8 +21,7 @@ function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-const grid = ReactDOM.render(<Grid marketdata={marketdata} />,
-  document.getElementById('root')
+ReactDOM.render(
+    <Grid marketdata={marketdata} />,
+    document.getElementById("root")
 );
-
-grid.changed();
